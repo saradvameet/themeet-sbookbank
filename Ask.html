@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+    .col{
+      text-align:right;
+      position:absolute;
+      top: 87px; 
+    }
+    .button{
+      color:white;
+    }
+    .d-block{
+      height: 60vh;
+      width:30%;
+    }
+    .btn:hover
+    {
+      box-shadow:0 5px 10px;
+      transition:0.5s;
+      transform:translateZ(6px);
+    }
+    .row1{
+      background-color: goldenrod;
+      height:8rem;
+    } 
+		body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: url("00.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+.card {
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.blue-text {
+    color:goldenrod;
+}
+
+.form-control-label {
+    margin-bottom: 0
+}
+.btn-outline-warning{
+      color:goldenrod;
+      box-shadow:0 5px 10px;
+      text-decoration: none;
+    }
+    .mybtn:hover{
+      color:goldenrod;
+    }
+
+input,
+textarea,
+button {
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
+
+.btn-block {
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400;
+    height: 43px;
+    cursor: pointer
+}
+
+.btn-block:hover {
+    color: #fff !important
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+div.darshan
+    {
+      overflow-x: hidden;
+      
+    }
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+  <div class="darshan">
+    <div class="row row1">
+   <div class="col-3"><a href="index.html"><img src="the meet.png" height="130" width="250" class="meet"></a></div>
+    <div class="col">
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-dark"><a class="button mybtn"href="index.html"
+    style="text-decoration:none;">Home</a></button>
+  
+  <button type="button" class="btn btn-dark"><a class="button mybtn"href="bookbank.html" style="text-decoration:none;">Book Banks</a></button>
+  <button type="button" class="btn btn-dark"><a class="button mybtn"href="Magazines.html" style="text-decoration:none;">Magazines</a></button>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button mybtn" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration:none;">
+      Collection
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="cd.html" style="text-decoration:none;">CD/DVD</a>
+      <a class="dropdown-item" href="cd.html" style="text-decoration:none;">Bound Volumes</a>
+    </div>
+  </div>
+  <button type="button" class="btn btn-dark"><a class="button mybtn"href="Ask.html" style="text-decoration:none;">Ask Query/Suggestions</a> </button>
+  <button type="button" class="btn btn-dark"><a class="button mybtn"href="profile.html" style="text-decoration:none;">Profile</a></button>
+</div>
+    </div>
+  </div>
+
+	<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3 class="text-white"><u>Ask Questions</u></h3>
+            <p class="blue-text">Just ask the questions<br> so that we can improvise the right experience for you.</p>
+            <div class="card">
+                <h6 class="text-center mb-4">Ask Questions to The Meet's Book Bank</h6>
+                <form class="form-card" onsubmit="event.preventDefault()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Your email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="validate(3)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" onblur="validate(4)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Query/Suggestions title<span class="text-danger"> *</span></label> <input type="text-area" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Type any query/suggestions<span class="text-danger"> *</span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)"> </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-warning">Request Query/Suggestions</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<div>
+<footer class="bg-dark text-center" style="color: goldenrod;">
+
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row4 d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-warning mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-4 mb-4 px-3 mb-md-0" align="left">
+          <h4 class="text-uppercase"><span class="backspace">|  Site's Links</span></h4>
+          <h5>
+          <ul class="list-unstyled mb-0 my-3">
+            <li>
+              <a href="index.html" class="text-white">Home</a>
+            </li><br/>
+            <li>
+              <a href="bookbank.html" class="text-white">Book Books</a>
+            </li><br/>
+            <li>
+              <a href="Magazines.html" class="text-white">Magazines</a>
+            </li><br/>
+            <li>
+              <a href="Ask.html" class="text-white">Ask Query/Suggestions</a>
+            </li><br/>
+            <li>
+              <a href="profile.html" class="text-white">Profile</a>
+            </li>
+          </ul></h5>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-4 mb-4 px-3 mb-md-0" align="left">
+          <h4 class="text-uppercase"><span class="backspace">|  About  Book Bank</span></h4>
+          <p class="text-white" style="width:70%">The Meet's  Book Bank - having the foundation of its first Book Bank laid in 2002.</p>
+          &#128337;&nbsp;<u><b> Book Bank HOURS</b></u><p class="text-white"><u>Monday – Thursday :</u><br/>8:00 a.m. to 8:00 p.m.<br/>
+<u>Friday :</u><br/>
+8:00 a.m. to 4:00 p.m.<br/>
+<u>Closed Saturday & Sunday</u></p>
+        </div> 
+        <!--Grid column-->
+         <!--Grid column-->
+        <div class="col-lg-4 col-md-4 mb-4 px-3 mb-md-0" align="left">
+          <h4 class="text-uppercase"><span class="backspace">|  Contact Info</span></h4>
+           <p class="text-white">&#127757; &nbsp; Rajkot - Morbi Highway,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gujarat-363650, <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INDIA<br/>
+            <br/>&#128222;&nbsp; +91 7228006778<br/><br/>
+            &#127760;&nbsp;  themeet'sBookBank.book.on<br/><br/>
+            &#9993;&nbsp; themeet's@bookbank.on
+           </p></div> 
+
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+  </div>
+  <!-- Grid container -->
+
+
+  <!-- Copyright -->
+  <div class="text-left p-3" style="font-size: large; font-weight:900px; background-color:goldenrod; color:black ;">
+    <div class="row" style="height:3vh;">
+      <div class="col-6" ><strong>
+        COPYRIGHT ©The Meet's Book Bank</strong>
+      </div>
+      <div class="col-6" style="margin-right: auto; margin-left: auto;" align="right">
+        <strong>Disign & Devloped by Student of The Meet's Book Bank</strong>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+ </footer>
+</div>
+</div>
+<!-- Footer -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
